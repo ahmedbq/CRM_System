@@ -1,0 +1,1 @@
+INSERT INTO CUSTOMER (id, name) VALUES(1, 'Ahmed');
