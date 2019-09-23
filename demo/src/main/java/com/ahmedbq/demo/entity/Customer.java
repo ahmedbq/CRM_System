@@ -9,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Getter @Setter @NoArgsConstructor
-public class Customer {
+public class Customer extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -1,1 +1,1 @@
-INSERT INTO CUSTOMER (id, name) VALUES(1, 'Ahmed');
+INSERT INTO CUSTOMER (id, name, disabled, email, membership, created_by, created_date, modified_by, modified_date) VALUES(1, 'Ahmed', 0, 'ahmedbq1993@gmail.com', 'PERSONAL', 'Ahmed', '2012-09-17 18:47:52.69', 'Ahmed', '2012-09-17 18:47:52.69');
