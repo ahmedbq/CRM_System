@@ -1,5 +1,8 @@
 package com.ahmedbq.demo.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -11,6 +14,7 @@ import java.util.Date;
 
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
+@Getter @Setter @NoArgsConstructor
 public abstract class BaseEntity {
 
     @CreatedBy

@@ -1,6 +1,7 @@
 package com.ahmedbq.demo.entity;
 
 import com.ahmedbq.demo.util.Membership;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,4 +26,9 @@ public class Customer extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private Membership membership;
+
+    @JsonIgnore
+    @Column(name = "social_security_number", nullable = true)
+    private String socialSecurityNumber;
+
 }
