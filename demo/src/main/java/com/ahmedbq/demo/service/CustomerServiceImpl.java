@@ -14,14 +14,4 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     CustomerRepository customerRepository;
-
-    @Override
-    public List<Customer> getAllCustomers() {
-        return customerRepository.findAll();
-    }
-
-    @Override
-    public Customer saveCustomer(Customer customer) {
-        return customerRepository.saveAndFlush(customer);
-    }
 }

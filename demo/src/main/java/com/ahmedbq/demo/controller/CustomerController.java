@@ -16,13 +16,4 @@ public class CustomerController {
     @Autowired
     CustomerService customerService;
 
-    @GetMapping("/all")
-    List<Customer> getAllCustomers() {
-        return customerService.getAllCustomers();
-    }
-
-    @PostMapping("/save")
-    Customer saveCustomer(Customer customer) {
-        return customerService.saveCustomer(customer);
-    }
 }

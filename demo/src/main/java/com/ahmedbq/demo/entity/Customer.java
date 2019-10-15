@@ -2,6 +2,7 @@ package com.ahmedbq.demo.entity;
 
 import com.ahmedbq.demo.util.Membership;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Getter @Setter @NoArgsConstructor
+@Data
 public class Customer extends BaseEntity {
 
     @Id
@@ -19,11 +20,13 @@ public class Customer extends BaseEntity {
     @Column(length =  50, nullable = false)
     private String name;
 
+    @JsonIgnore
     private Boolean disabled;
 
     @Column(unique = true, nullable = true)
     private String email;
 
+    @JsonIgnore
     @Enumerated(EnumType.STRING)
     private Membership membership;
 

@@ -5,6 +5,5 @@ import com.ahmedbq.demo.entity.Customer;
 import java.util.List;
 
 public interface CustomerService {
-    List<Customer> getAllCustomers();
-    Customer saveCustomer(Customer customer);
+
 }
